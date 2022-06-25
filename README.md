@@ -4,8 +4,8 @@
 
 <p>
   <a href="https://rbcv.s3.eu-west-2.amazonaws.com/artifacts/rb-cv.pdf">
-    <img src="https://video-tech-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-tech-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="320">
-    <img src="https://video-tech-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-tech-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="320">
+    <img src="https://video-tech-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-tech-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="220">
+    <img src="https://video-tech-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-tech-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="220">
   </a>
 </p>
 
