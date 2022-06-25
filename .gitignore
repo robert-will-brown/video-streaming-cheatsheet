@@ -1,0 +1,10 @@
+*png
+*jpg
+*pdf
+*out
+*aux
+*fls
+*gz
+*log
+*fdb_latexmk
+.DS_Store
