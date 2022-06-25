@@ -1,6 +1,6 @@
 [![Produce and Publish PDF](https://github.com/robert-will-brown/video-tech-cheatsheet/actions/workflows/produce-pdf.yml/badge.svg?branch=main)](https://github.com/robert-will-brown/video-tech-cheatsheet/actions/workflows/produce-pdf.yml)
 
-# Internet Video Technology Cheatsheet
+# Video Technology Cheatsheet
 
 <p>
   <a href="https://rbcv.s3.eu-west-2.amazonaws.com/artifacts/rb-cv.pdf">
