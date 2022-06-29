@@ -96,7 +96,18 @@ See "MAM".
 
 \smallskip
 \textbf{DASH (Dynamic Adaptive Streaming via HTTP)}
-Adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers. Works by breaking the content into a sequence of small segments, which are served over HTTP. See also \textit{HLS}.
+Adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers. Works by breaking the content into a sequence of small segments, which are served over HTTP. See also 
+
+However unlike HLS, DASH does not require a specific codec. The video could be encoded using H264, however VP9 and H265 are also popular
+
+international standard
+
+DASH is needed to deliver content using Widevine (from Google) and PlayReady (from Microsoft). There isn’t a single, universal DRM solution supported by all browsers and so a combination is needed
+
+\textit{HLS}.
+
+
+
 
 \smallskip
 \textbf{DRM (Digital Rights Management)}
@@ -187,6 +198,9 @@ Standard for delivering content to consumers for consumption on TV displays over
 \smallskip
 \textbf{HLS (HTTP Live Streaming)}
 Protocol for delivering live streams over the internet.
+H264 has to be used as the video codec.
+
+
 
 \smallskip
 \textbf{GOP}
