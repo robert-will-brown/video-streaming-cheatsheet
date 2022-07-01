@@ -1,0 +1,2 @@
+* Rights Holder
+* Content Owner
