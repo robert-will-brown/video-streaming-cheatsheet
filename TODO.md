@@ -1,3 +1,3 @@
 * Rights Holder
 * Content Owner
-* SDI
+* SDI (Serial Digital Interface)
