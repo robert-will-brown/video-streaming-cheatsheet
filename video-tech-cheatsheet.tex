@@ -6,7 +6,7 @@
 % \usepackage{ifthen}
 \usepackage[a4paper,margin=0.35in]{geometry}
 \usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
-
+\usepackage{tikz}
 
 \pagestyle{empty}
 \makeatletter
@@ -31,12 +31,21 @@
 
 \begin{document}
 
-\raggedright
 \footnotesize
 
+
+
 \begin{center}
-     \Large{\textbf{DRAFT VERSION - Video Technology Cheatsheet - Jun 2022}} \\
+  \begin{tikzpicture}[remember picture, overlay]
+    \node [anchor=north east, inner sep=8pt]  at (current page.north east)
+      {\includegraphics[height=24pt]{latest-qr.png}};
+  \end{tikzpicture}
+     \Large{\textbf{Video Technology Cheatsheet - Jun 2022}}
 \end{center}
+
+
+
+
 \begin{multicols}{4}
 \setlength{\premulticols}{1pt}
 \setlength{\postmulticols}{1pt}
