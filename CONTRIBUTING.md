@@ -1,38 +1,17 @@
 # Contributing
 
-## Adding alerting rule
+## Adding Terminology
 
-If you don't have time to write a PR, just copy and paste some alerts into an issue. We will format it accordingly.
-
-Rules are here: `_data/rules.yml`.
+If you don't have time to write a PR, just copy and paste the term into an issue - we will add it.
 
 ### Guidelines
 
-Please ensure your pull request adheres to the following guidelines:
+This is designed to be a cheatsheet, that is, information that will *always* fit physically on a single piece of paper.  
 
-- Search previous suggestions before making a new one, as yours may be a duplicate.
-- Keep descriptions short and simple, but descriptive.
-- Description must be factual (the "what?") and should provide root cause suggestions (the "why?"), for faster resolution.
-- Queries must be tested on latest exporter version.
+As there is only a small amount of space usable on a double sided page, please ensure your pull request adheres to the following guidelines:
 
-## Improving Github page
-
-### Run localy
-
-```
-gem install bundler
-bundle install
-jekyll serve
-```
-
-Or with Docker:
-
-```
-docker run --rm -it -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll jekyll serve
-```
-
-Or with Docker-Compose:
-
-```
-docker-compose up -d
-```
+- Be ruthless with the length of entries. They must be as succinct as possible so don't use twelve words if three will suffice. It's okay (often preferable) to use non "English grammar" sentence structure to honour this rule.
+- Ensure that an entry is focussed on the Streaming Video Industry specifically.
+- Use acronyms when referring to other terms in the list (👇).
+- *Italicise* acronyms with a `\textit{Some Acronym}`.
+- End the terms in full stops `.` -  we aren't animals...
