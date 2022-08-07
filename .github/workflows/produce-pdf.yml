@@ -4,7 +4,7 @@ on:  # yamllint disable-line rule:truthy
     branches:
     - 'main'
     paths:
-    - video-tech-cheatsheet.tex
+    - video-streaming-cheatsheet.tex
   workflow_dispatch:
 jobs:
   publish_pdf:
@@ -30,15 +30,15 @@ jobs:
       - name: Compile LaTeX Document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: video-tech-cheatsheet.tex
+          root_file: video-streaming-cheatsheet.tex
       - name: Generate Thumbnail for Page 1
         uses: jruipinto/ImageMagick-action@v1
         with:
-          command: convert -density 700 -resize 10% -append -quality 98 -alpha remove video-tech-cheatsheet.pdf[0] video-tech-cheatsheet-thumbnail-p1.jpg
+          command: convert -density 700 -resize 10% -append -quality 98 -alpha remove video-streaming-cheatsheet.pdf[0] video-streaming-cheatsheet-thumbnail-p1.jpg
       - name: Generate Thumbnail for Page 2
         uses: jruipinto/ImageMagick-action@v1
         with:
-          command: convert -density 700 -resize 10% -append -quality 98 -alpha remove video-tech-cheatsheet.pdf[1] video-tech-cheatsheet-thumbnail-p2.jpg
+          command: convert -density 700 -resize 10% -append -quality 98 -alpha remove video-streaming-cheatsheet.pdf[1] video-streaming-cheatsheet-thumbnail-p2.jpg
       - name: Upload PDF to S3
         id: upload-pdf
         uses: hkusu/s3-upload-action@v2
@@ -47,7 +47,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'eu-west-1'
           aws-bucket: ${{ secrets.AWS_BUCKET }}
-          file-path: './video-tech-cheatsheet.pdf'
+          file-path: './video-streaming-cheatsheet.pdf'
           content-type: 'application/pdf'
           destination-dir: '/'
       - name: Upload Thumbnail 1 to S3
@@ -57,7 +57,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'eu-west-1'
           aws-bucket: ${{ secrets.AWS_BUCKET }}
-          file-path: './video-tech-cheatsheet-thumbnail-p1.jpg'
+          file-path: './video-streaming-cheatsheet-thumbnail-p1.jpg'
           content-type: 'image/jpeg'
           destination-dir: '/'
       - name: Upload Thumbnail 2 to S3
@@ -67,6 +67,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'eu-west-1'
           aws-bucket: ${{ secrets.AWS_BUCKET }}
-          file-path: './video-tech-cheatsheet-thumbnail-p2.jpg'
+          file-path: './video-streaming-cheatsheet-thumbnail-p2.jpg'
           content-type: 'image/jpeg'
           destination-dir: '/'
