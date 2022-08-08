@@ -56,6 +56,10 @@ Not-for-profit innovation and R\&D lab. System operators from around the world a
 Encoding each frame or \textit{GOP} at a constant bitrate.
 
 \smallskip
+\textbf{CC (Closed Captions)}
+Closed captions are a text version of the spoken part of a television, movie or computer presentation.
+
+\smallskip
 \textbf{CDN}
 Content Delivery Network.
 
@@ -79,19 +83,13 @@ Compress \& Decompress (Encode \& Decode) standard for reducing the file sizes o
 \textbf{Container}
 Wraps into a single file the encoded audio \& video and the metadata.  e.g. \textit{MP4} \& \textit{AVI}.
 
+
+
 %------------------------------------------------
 \section{D}
 \hrule
 
 \medskip
-\textbf{DASH-IF (DASH Industry Forum)}
-Industry group creating interoperability guidelines and promoting \textit{MPEG-DASH}.
-
-\smallskip
-\textbf{dash.js}
-Reference client implementation by \textit{DASH-IF} for the playback of \textit{MPEG-DASH} via JavaScript and compliant \textit{MSE} / \textit{EME} platforms.
-
-\smallskip
 \textbf{DAM (Digital Asset Managment)}
 See \textit{MAM}.
 
@@ -100,70 +98,86 @@ See \textit{MAM}.
 \textit{ABR} that enables streaming of content via an HTTP server. DASH does not require a specific \textit{codec} - the video could be encoded using \textit{H.264}, \textit{VP9}, \textit{H.265}, etc.
 
 \smallskip
+\textbf{DASH-IF (DASH Industry Forum)}
+Industry group creating interoperability guidelines and promoting \textit{MPEG-DASH}.
+
+\smallskip
+\textbf{dash.js}
+Reference client implementation by \textit{DASH-IF} for the playback of \textit{MPEG-DASH} via JavaScript and compliant \textit{MSE} / \textit{EME} platforms.
+
+\smallskip
 \textbf{DECE (Digital Entertainment Content Ecosystem)}
 Inventor of \textit{Ultraviolet}, now dissolved.
-
-\smallskip
-\textbf{DRM (Digital Rights Management)}
-Technologies that limit the usage \& sharing of digital content.  See \textit{Widevine}, \textit{Playready} \& \textit{Fairplay}.
-
-\smallskip
-\textbf{DOCSIS (Data Over Cable Service Interface Specification)}
-Telco standard that permits the addition of high-bandwidth data transfer to an existing cable television (CATV) system.
 
 \smallskip
 \textbf{Deinterlace}
 To process interlaced TV video. Uses every other line from one field \& interpolates new in-between lines. See also \textit{Interlace}.
 
 \smallskip
+\textbf{DOCSIS (Data Over Cable Service Interface Specification)}
+Telco standard that permits the addition of high-bandwidth data transfer to an existing cable television (CATV) system.
+
+\smallskip
+\textbf{DOG (Digital on-screen graphic)}
+\textit{Watermark} logo that most television broadcasters overlay over a portion of the screen area of their programs to identify the channel.
+
+\smallskip
+\textbf{DRM (Digital Rights Management)}
+Technologies that limit the usage \& sharing of digital content.  See \textit{Widevine}, \textit{Playready} \& \textit{Fairplay}.
+
+\smallskip
 \textbf{DVB (Digital Video Broadcasting)}
 Open standards for digital TV.  Satalite [DVB-S, DVB-S2], Cable [DVB-SH, DVB-C, DVB-C2], Terrestrial TV [DVB-T, DVB-T2].
+
 
 %------------------------------------------------
 \section{E-F}
 \hrule
 
 \medskip
+\textbf{EME (Encrypted Media Extensions)}
+API that enables web applications to interact with content protection systems. Enables encrypted files to be used in any browser regardless of the underlying protection system.
+
+\smallskip
 \textbf{Encode}
 Process of compressing RAW video, or the process of re-encoding a video into a different format.
 
 \smallskip
-\textbf{EME (Encrypted Media Extensions)}
-API that enables web applications to interact with content protection systems. Enables encrypted files to be used in any browser regardless of the underlying protection system.
+\textbf{F4V (Flash H.264 Video)}
+Flash MP4 Video.  Adobe proprietary extension to designate MPEG-4 H.264 content in a Flash-compliant \textit{Container}.
 
 \smallskip
 \textbf{FairPlay}
 Apple \textit{DRM}, the only option for Safari and is only used by Apple devices.
 
 \smallskip
-\textbf{Fragmentation}
-Divide large media files into a series of smaller files with the purpose of delivering them over the internet.
-
-\textbf{Frame Rate}
-The number of frames per second (FPS) for cinema or video acquisition, editing and projection. Common frame rates include 24 fps (film), 30 fps, and 29.97 fps.
-
-\textbf{FPS (Frames Per Second)}
-See \textit{Frame Rate}.
-
-\smallskip
 \textbf{Fingerprint (Perceptual Hash)}
-A generated hash of a video that will uniqely identify the video. See also \textit{Watermark}.
+A generated hash of a video that will uniqely identify the video. Not to be confused with \textit{Watermark}.
 
 \smallskip
 \textbf{fMP4 (Fragmented MP4)}
 \textit{MP4} which contains a series of segments which can be requested individually from a HTTP server that supports byte-range requests.
 
 \smallskip
-\textbf{F4V (Flash H.264 Video)}
-Flash MP4 Video.  Adobe proprietary extension to designate MPEG-4 H.264 content in a Flash-compliant \textit{Container}.
+\textbf{FPS (Frames Per Second)}
+See \textit{Frame Rate}.
+
+\smallskip
+\textbf{Fragmentation}
+Divide large media files into a series of smaller files with the purpose of delivering them over the internet.
+
+\smallskip
+\textbf{Frame Rate}
+The number of frames per second (FPS) for cinema or video acquisition, editing and projection. Common frame rates include 24 fps (film), 30 fps, and 29.97 fps.
+
 
 %------------------------------------------------
 \section{G-H}
 \hrule
 
 \medskip
-\textbf{HDTV (High Definition Television)}
-Broadcast and viewing of high-definition signals (720p progressive or 1080i).
+\textbf{GOP (Group of Pictures)}
+Grouping of \textit{frames} for compression. Longer GOPs allow better compression but slow the delivery process for live encoding. Each GOP begins with an I-frame keyframe and can contain any number of predictive (P frames) and bidirectional predictive (B frames).
 
 \smallskip
 \textbf{H.26[1|2|3|4|5|6]}
@@ -174,24 +188,24 @@ Standards-based Codecs:\\
  - \textit{H.266} also known as \textit{VVC}.
 
 \smallskip
+\textbf{HbbTV (Hybrid Broadcast Broadband TV)}
+Standard for delivering content to consumers over broadcast and broadband networks.
+
+\smallskip
 \textbf{HDS (HTTP Dynamic Streaming)}
 Adobe's \textit{ABR} method for on-demand and live - \textit{MP4} video content over HTTP.
+
+\smallskip
+\textbf{HDTV (High Definition Television)}
+Broadcast and viewing of high-definition signals (720p progressive or 1080i).
 
 \smallskip
 \textbf{HEVC (High Efficiency Video Coding)}
 See \textit{H.265}.
 
 \smallskip
-\textbf{HbbTV (Hybrid Broadcast Broadband TV)}
-Standard for delivering content to consumers over broadcast and broadband networks.
-
-\smallskip
 \textbf{HLS (HTTP Live Streaming)}
 Protocol for delivering live streams by HTTP.  \textit{H.264} has to be used as the video \textit{codec}.
-
-\smallskip
-\textbf{GOP (Group of Pictures)}
-Grouping of \textit{frames} for compression. Longer GOPs allow better compression but slow the delivery process for live encoding. Each GOP begins with an I-frame keyframe and can contain any number of predictive (P frames) and bidirectional predictive (B frames).
 
 
 %------------------------------------------------
@@ -199,84 +213,57 @@ Grouping of \textit{frames} for compression. Longer GOPs allow better compressio
 \hrule
 
 \medskip
-\textbf{Interlace}
-Technique for doubling the perceived frame rate of a video display without consuming extra bandwidth. See also \textit{Deinterlace}.
-
-\smallskip
-\textbf{ISO BMFF (ISO Base Media File Format)}
-\textit{Container} file format.  Basis for other media file formats (e.g. the \textit{MP4} \textit{Container}).
-
-\smallskip
 \textbf{I Frame (Intra picture frame)}
 See \textit{GOP}.
-
-\smallskip
-\textbf{Keyframe}
-Stores the complete image of the scene.
 
 \smallskip
 \textbf{IETF (Internet Engineering Task Force)}
 Responsible for the technical standards that comprise the Internet protocol suite (TCP/IP).
 
 \smallskip
-\textbf{ITU (International Telecommunication Union)}
-UN agency that coordinates shared global use of the radio spectrum, satellite orbits and establishes worldwide standards.
+\textbf{Interlace}
+Technique for doubling the perceived frame rate of a video display without consuming extra bandwidth. See also \textit{Deinterlace}.
+
+\smallskip
+\textbf{Interstitial}
+Any web-based advertisement which occurs before, after, or during a narrative content presentation.
 
 \smallskip
 \textbf{IPTV (Internet Protocol television)}
 TV content over IP as opposed to terrestrial, satellite, or cable.
 
 \smallskip
-\textbf{Interstitial}
-Any web-based advertisement which occurs before, after, or during a narrative content presentation.
+\textbf{ISO BMFF (ISO Base Media File Format)}
+\textit{Container} file format.  Basis for other media file formats (e.g. the \textit{MP4} \textit{Container}).
+
+\smallskip
+\textbf{ITU (International Telecommunication Union)}
+UN agency that coordinates shared global use of the radio spectrum, satellite orbits and establishes worldwide standards.
+
+\smallskip
+\textbf{Keyframe}
+A frame of video that contains all of the detail of the scene.
+
 
 %------------------------------------------------
 \section{L-M}
 \hrule
 
-\smallskip
-\textbf{Luminance (Y)}
-The intensity or brightness of a video signal. See also \textit{Chrominance}.
+\medskip
+\textbf{LCEVC (Low Complexity Enhancement Video Coding)}
+Takes a base video \textit{Codec} such as \textit{AVC} and employs an efficient low-complexity enhancement that correct artifacts produced by the base video codec and adds detail and sharpness for the final output video.
 
 \smallskip
 \textbf{LITC (Linear Timecode)}
 \textit{SMPTE} \textit{Timecode} data in an audio signal.
 
 \smallskip
-\textbf{LCEVC (Low Complexity Enhancement Video Coding)}
-Takes a base video \textit{Codec} such as \textit{AVC} and employs an efficient low-complexity enhancement that correct artifacts produced by the base video codec and adds detail and sharpness for the final output video.
-
-\smallskip
-\textbf{MSE (Media Source Extensions)}
-Media Source Extensions.
+\textbf{Luminance (Y)}
+The intensity or brightness of a video signal. See also \textit{Chrominance}.
 
 \smallskip
 \textbf{m3u8}
 Playlist file.  Can be used to define a playlist for delivery to smart TV devices such as Roku.
-
-\smallskip
-\textbf{MBR (Multi-bitrate Streaming}
-Sending out multiple versions of the same live stream at different quality levels.
-
-\smallskip
-\textbf{MP4}
-\textit{Container} format.
-
-\smallskip
-\textbf{MPEG-DASH}
-See \textit{DASH}.
-
-\smallskip
-\textbf{MPEG-[1|2|3|4|H]}
-See \textit{H.26[1|2|3|4|5]}.
-
-\smallskip
-\textbf{Multicast}
-Streaming from one server to many end points simultaneously e.g. \textit{IPTV}.  See also \textit{Unicast}.
-
-\smallskip
-\textbf{MPEG (Motion Picture Experts Group)}
-Standards committee that sets policy for media encoding and decoding standards.
 
 \smallskip
 \textbf{MAM (Media Asset Management)}
@@ -287,16 +274,8 @@ Repository for large media files, such as video and full-resolution images. Ofte
 Open-standard \textit{DRM}. Widely used in Japan, China, \& East Asia.
 
 \smallskip
-\textbf{MP4}
-\textit{Container} Format.
-
-\smallskip
-\textbf{Multiplex}
-A term describing the interleaving of multple signals together into a single signal. Multiplexing is often shortened even further to the term "muxing" and a pertient example of muxing is the conversion of MPEG-2 program or elementary streams into an MPEG-2 transport stream for broadcast delivery
-
-\smallskip
-\textbf{Muxing}
-See \textit{Multiplex}.
+\textbf{MBR (Multi-bitrate Streaming}
+Sending out multiple versions of the same live stream at different quality levels.
 
 \smallskip
 \textbf{MovieLabs}
@@ -307,16 +286,48 @@ Non-profit to R\&D Movie distribution and protection. (Disney, Paramount, Twenti
 Family of complementary, compatible specifications that address key aspects of online delivery e.g. facilitating automation.
 
 \smallskip
+\textbf{MP4}
+\textit{Container} format.
+
+\smallskip
+\textbf{MPEG (Motion Picture Experts Group)}
+Standards committee that sets policy for media encoding and decoding standards.
+
+\smallskip
+\textbf{MPEG-[1|2|3|4|H]}
+See \textit{H.26[1|2|3|4|5]}.
+
+\smallskip
+\textbf{MPEG-DASH}
+See \textit{DASH}.
+
+\smallskip
+\textbf{MSE (Media Source Extensions)}
+Media Source Extensions.
+
+\smallskip
 \textbf{MSO (Multiple System Operator)}
 Companies that offer services beyond TV broadcast e.g. Internet and telephone alongside TV.  See \textit{MVPD}.
 
 \smallskip
-\textbf{MVPD (Multichannel Video Programming Distributor)}
-Company that provides multiple TV channels e.g. Sky, BT, Comcast, DirecTV. Also known as \textit{MSOs}. See also \textit{vMVPD}.
+\textbf{Multicast}
+Streaming from one server to many end points simultaneously e.g. \textit{IPTV}.  See also \textit{Unicast}.
+
+\smallskip
+\textbf{Multiplex}
+A term describing the interleaving of multple signals together into a single signal. Multiplexing is often shortened even further to the term "muxing" and a pertient example of muxing is the conversion of MPEG-2 program or elementary streams into an MPEG-2 transport stream for broadcast delivery
+
+\smallskip
+\textbf{Muxing}
+See \textit{Multiplex}.
 
 \smallskip
 \textbf{MVNO (Mobile Virtual Network Operator)}
 Reseller of network services from other telecommunications suppliers and who does not own the telecommunication infrastructure.
+
+\smallskip
+\textbf{MVPD (Multichannel Video Programming Distributor)}
+Company that provides multiple TV channels e.g. Sky, BT, Comcast, DirecTV. Also known as \textit{MSOs}. See also \textit{vMVPD}.
 
 
 %------------------------------------------------
@@ -324,16 +335,20 @@ Reseller of network services from other telecommunications suppliers and who doe
 \hrule
 
 \medskip
-\textbf{NDI (Network Device Interface)}
-Specification to enable video-compatible products to communicate video in frame accurate and suitable for switching in a live production.
-
-\smallskip
 \textbf{Narrowcast}
 Send data to specific list of recipients.
 
 \smallskip
+\textbf{NDI (Network Device Interface)}
+Specification to enable video-compatible products to communicate video in frame accurate and suitable for switching in a live production.
+
+\smallskip
 \textbf{NTSC (National Television Standards Committee)}
 A television video format used in the United States and elsewhere. Displayed 525 lines of resolution at 60 fields per second, 30 frames per second (actually a fractional value near 29.97). See also \textit{PAL}.
+
+\smallskip
+\textbf{OBS (Open Broadcaster Software)}
+Free and open source software for video recording and live streaming.
 
 \smallskip
 \textbf{Ogg}
@@ -342,10 +357,6 @@ An open-source \textit{container} format that primarily houses \textit{Theora} a
 \smallskip
 \textbf{OpenGL}
 Cross-language and platform API to render 2D and 3D vector graphics normally used for desktop Apps, written in C.
-
-\smallskip
-\textbf{OBS (Open Broadcaster Software)}
-Free and open source software for video recording and live streaming.
 
 \smallskip
 \textbf{OTT (Over The Top)}
@@ -361,40 +372,36 @@ Platform that allows you to stream video content as well as upload your own prod
 \hrule
 
 \medskip
-\textbf{Pre-roll}
-Displaying a video advertisement occurring before the primary video is played. Pre-roll advertisements for online video are positioned similar to the way that movie trailers are shown prior to watching a movie at your local cineplex.
-
-\smallskip
-\textbf{Progressive Download}
-A method of delivering audio/video data over the Internet that involves playing a segment, often the initial downloaded portion of a file, while the remaining content download is still in progress.
-
-\smallskip
-\textbf{Progressive Video}
-Video consisting of complete frames, not interlaced fields. Each individual frame is a coherent image captured by the camera at a single moment in time. See also interlaced video.
-
-\smallskip
-\textbf{PlayReady}
-Microsoft \textit{DRM} - Supported on Windows, most STBs and TVs.
+\textbf{PAL (Phase Alternation Line)}
+Television video format used in Europe and elsewhere. Displayed with 625 lines of resolution at 50 fields per second, 25 frames per second. See also \textit{NTSC}.
 
 \smallskip
 \textbf{Perceptual Compression}
 A compression technique that takes advantage of knowledge of how humans perceive; that is, by eliminating visual detail that the eye cannot easily see or audio frequencies that the ear cannot easily hear.
 
 \smallskip
-\textbf{PAL (Phase Alternation Line)}
-Television video format used in Europe and elsewhere. Displayed with 625 lines of resolution at 50 fields per second, 25 frames per second. See also \textit{NTSC}.
+\textbf{PlayReady}
+Microsoft \textit{DRM} - Supported on Windows, most STBs and TVs.
 
 \smallskip
 \textbf{Post-roll}
 Displaying a video advertisement after the primary video is played.
 
 \smallskip
-\textbf{PVOD (Premium VOD)}
-Monetisation Model - Variation of \textit{TVOD} where end-users can pay to access content sooner than others.
+\textbf{Pre-roll}
+Displaying a video advertisement before the primary video is played.
 
 \smallskip
-\textbf{PPV (Pay-Per-View)}
-Lorem.
+\textbf{Progressive Download}
+A method of delivering audio/video data over the Internet that involves playing a segment, often the initial downloaded portion of a file, while the rest is downloading.
+
+\smallskip
+\textbf{Progressive Video}
+Video consisting of complete frames, not interlaced fields. Each individual frame is a coherent image captured by the camera at a single moment in time. See also \textit{Interlaced}.
+
+\smallskip
+\textbf{PVOD (Premium VOD)}
+Monetisation Model - Variation of \textit{TVOD} where end-users can pay to access content sooner than others.
 
 
 %------------------------------------------------
@@ -402,28 +409,20 @@ Lorem.
 \hrule
 
 \medskip
-\textbf{RTSPE}
-RTSPE
-
-\smallskip
-\textbf{RTSP}
-RTSP
+\textbf{RGB}
+Acronym for Red, Green, Blue. Full-color video signal format, consisting of three elements. See also \textit{YUV}.
 
 \smallskip
 \textbf{RTMP (Real-Time Multimedia Protocol)}
-Protocol for live streaming often use to deliver a stream from encoder to OVP endpoint for ingestion.
+Protocol for live streaming often use to deliver a stream from encoder to \textit{OVP} endpoint for ingestion.
 
 \smallskip
 \textbf{RTP (Real-time Transport Protocol)}
 Network protocol for delivering audio and video over IP networks.
 
 \smallskip
-\textbf{RGB}
-Acronym for Red, Green, Blue. Full-color video signal format, consisting of three elements. See also \textit{YUV}.
-
-\smallskip
-\textbf{Rights Holder}
-Lorem.
+\textbf{RTSP (Real-Time Streaming Protocol)}
+Protocol for establishing and controlling media sessions between endpoints, allowing commands such as play, record and pause to control of the media streaming from the server to a client.
 
 \smallskip
 \textbf{Segmenting}
@@ -438,58 +437,45 @@ A broadcast that is coordinated between two or more mediums, such as radio and t
 Microsoft’s proprietary \textit{ABR} technology. Uses \textit{fMP4} and \textit{PIFF} to stream via HTTP.
 
 \smallskip
-\textbf{SVC (Scalable Video Coding)}
-Lorem
-
-\smallskip
 \textbf{SMPTE (Society of Motion Picture \& Television Engineers)}
 Global professional association of engineers, technologists, and execs working in the m\&E industy.
 
 \smallskip
 \textbf{SVOD (Subscription VOD)}
-subscription video-on-demand. Similar to traditional cable television, SVOD grants customers access to a catalog of video content for a recurring daily, weekly, or monthly rate
+Grants customers access to a catalog of video content for a recurring daily, weekly, or monthly rate.
 
 
 %------------------------------------------------
-\section{T}
+\section{T-U}
 \hrule
 
 \medskip
-\textbf{TS (Video Transport Stream)}
-Video data compressed with standard MPEG-2. Often utilised for saving video on a DVD or broadcast video.
-
-\smallskip
 \textbf{Theora}
-Open-source video \textit{codec}..
-
-\smallskip
-\textbf{Transcode}
-Process of creating copies of video files in different sizes.
+Open-source video \textit{Codec}.
 
 \smallskip
 \textbf{Timecode}
 An exact time used to identify a specific frame in a clip or production. Measured in hours, minutes, seconds, and frames. Primary types are \textit{SMPTE}, \textit{LITC} and \textit{VITC}.
 
 \smallskip
-\textbf{Timecode}
-A measurement of video frames, using an absolute reference point between each field or frame of video. Two primary types of
+\textbf{Transcode}
+Process of creating copies of video files in different bitrates.
+
+\smallskip
+\textbf{TS (Video Transport Stream)}
+Video data compressed with standard MPEG-2. Often utilised for saving video on a DVD or broadcast video.
 
 \smallskip
 \textbf{TVOD (Transactional VOD)}
-Monetisation Model - Buying or renting a piece of content. In the case of live events, TVOD can also be known as Pay-Per-View (PPV).
-
-
-%------------------------------------------------
-\section{U}
-\hrule
-
-\medskip
-\textbf{UltraViolet}
-Defunct cloud-based digital rights locker.
+Monetisation Model - Buying or renting a piece of content.
 
 \smallskip
 \textbf{Ultra HD}
 Brand name for consumer 4K monitors.
+
+\smallskip
+\textbf{UltraViolet}
+Defunct cloud-based digital rights locker.
 
 \smallskip
 \textbf{Unicast}
@@ -505,68 +491,73 @@ Streaming from one server a single endpoint or user. e.g. \textit{OTT}.  See als
 XML schema for serving ads to digital video players, and describes expected video player behavior when executing VAST-formatted ad responses.
 
 \smallskip
-\textbf{VP9}
-Open and royalty-free video coding format developed by Google, competes mainly with HEVC/H.265.
-
-\smallskip
 \textbf{VBR (Variable Bitrate)}
 VBR allows a higher bitrate (and therefore more storage space) to be allocated to the more complex segments of media files while less space is allocated to less complex segments.
-
-\smallskip
-\textbf{Vorbis}
-Open-source audio \textit{codec}.
-
-\smallskip
-\textbf{VLC (VideoLan Client)}
-A player capable of playing a wide variety of formats.
 
 \smallskip
 \textbf{VITC (Vertical Interval Timecode)}
 \textit{SMPTE} \textit{Timecode} encoded on one scan line in a video signal.
 
 \smallskip
-\textbf{VVC (Versatile Video Coding)}
-See \textit{H.266}.
+\textbf{VLC (VideoLan Client)}
+A player capable of playing a wide variety of formats.
 
 \smallskip
-\textbf{VTM (VVC Test Model)}
-Reference software codebase for testing \textit{VVC}.
+\textbf{vMVPD (Virtual Multichannel Video Programming Distributor)}
+Provides multiple TV channels through the internet e.g. DirecTV Now, PlayStation Vue, YouTube TV. See also \textit{MVPD}.
 
 \smallskip
 \textbf{VOD (Video on demand)}
 Interactive TV system that allows the viewer to select content and view it at a time of their choosing.
 
 \smallskip
-\textbf{vMVPD (Virtual Multichannel Video Programming Distributor)}
-Provides multiple TV channels through the internet e.g. DirecTV Now, PlayStation Vue, YouTube TV. See also \textit{MVPD}.
+\textbf{Vorbis}
+Open-source audio \textit{codec}.
+
+\smallskip
+\textbf{VP9}
+Open and royalty-free video coding format developed by Google, competes mainly with HEVC/H.265.
+
+\smallskip
+\textbf{VTM (VVC Test Model)}
+Reference software codebase for testing \textit{VVC}.
+
+\smallskip
+\textbf{VTT (Video Text Track)}
+Text file in the Web Video Text Tracks (WebVTT) format. It contains supplementary information about a web video, including subtitles, captions, descriptions, chapters, and metadata.
+
+\smallskip
+\textbf{VVC (Versatile Video Coding)}
+See \textit{H.266}.
+
 
 %------------------------------------------------
 \section{W-Z}
 \hrule
 
 \medskip
-\textbf{WebRTC (Web Real-Time Communication)}
-Allows direct peer-to-peer real-time communication via APIs from browser with no plugins.
+\textbf{Watermark}
+Embedding data into a video stream or overlaying onto the video for the purpose of later identifying where that video originate. Not to be confused with \textit{Fingerprint}.
 
 \smallskip
-\textbf{Windows Media}
-Microsoft's proprietary legacy media format that housed audio, video, and metadata.
+\textbf{WebGL}
+Designed for rendering 2D and 3D graphhics, running in the browser with Javascript. See also \textit{OpenGL}.
 
 \smallskip
 \textbf{WebM}
 Codec created as VP8, purchased by Google and open-sourced.
 
 \smallskip
+\textbf{WebRTC (Web Real-Time Communication)}
+Allows direct peer-to-peer real-time communication via APIs from browser with no plugins.
+
+\smallskip
 \textbf{Widevine}
 Google \textit{DRM} - Used on Android Devices natively, in Chrome, Edge (soon), Roku, Smart TVs, uses protobuf format for metadata.
 
 \smallskip
-\textbf{Watermark}
-Lorem. See also \textit{Fingerprint}.
-
-\smallskip
-\textbf{WebGL}
-Designed for rendering 2D and 3D graphhics, running in the browser with Javascript. See also \textit{OpenGL}.
+\textbf{Windows Media}
+Microsoft's proprietary legacy media format that housed audio, video, and metadata.
 
 \smallskip
 \textbf{WMV (Windows Media Video)}
