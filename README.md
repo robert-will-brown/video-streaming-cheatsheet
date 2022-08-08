@@ -1,6 +1,6 @@
 [![Produce and Publish PDF](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml/badge.svg?branch=main)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml)
 
-# 📺 🎥 Video Streaming Cheatsheet
+# 📺 Video Streaming Cheatsheet
 
 <p>
   <a href="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf">
