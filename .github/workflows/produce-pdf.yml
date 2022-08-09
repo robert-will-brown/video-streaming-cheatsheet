@@ -1,10 +1,8 @@
 name: Produce and Publish PDF
 on:  # yamllint disable-line rule:truthy
   push:
-    branches:
-    - 'main'
-    paths:
-    - video-streaming-cheatsheet.tex
+    tags:
+    - '*'
   workflow_dispatch:
 jobs:
   publish_pdf:
@@ -25,7 +23,8 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v2
         with:
           find: "@@version@@"
-          replace: "${{ steps.date.outputs.date }}-${{ steps.git_branch.outputs.git_branch }}-${{ steps.git_hash.outputs.git_hash }}"
+          replace: "${{github.ref_name}}"
+          #replace: "${{ steps.date.outputs.date }}-${{ steps.git_branch.outputs.git_branch }}-${{ steps.git_hash.outputs.git_hash }}"
           regex: false
       - name: Compile LaTeX Document
         uses: xu-cheng/latex-action@v2
