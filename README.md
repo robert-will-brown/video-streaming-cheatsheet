@@ -1,6 +1,6 @@
 [![Produce and Publish PDF](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml/badge.svg?branch=main)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml)
 
-# 📺 Video Streaming Cheatsheet
+# Video Streaming Cheatsheet
 
 <p>
   <a href="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf">
@@ -17,15 +17,10 @@ There is a QR code in the top right of the document that links to the latest onl
 
 Give a ⭐️ if this project helps you!
 
-## 🤝 Contributing
+## Contributing
 
 Contributions from the community are welcome.
 
 Add terms, correct existing terms, deprecate older less used terminology, spelling...
 
 [Instructions here](CONTRIBUTING.md).
-
-## 🏋 Improvements
-
- - Add a check to ensure only two pages are generated
-
