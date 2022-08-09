@@ -9,9 +9,9 @@
   </a>
 </p>
 
-This repository contains the source code for the *Video Streaming Cheatsheet*, which is a double sided page that contains common terminology used in the video streaming industry in a quick reference format.  
+The *Video Streaming Cheatsheet* is a double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format.  
 
-It's written in LaTeX and will generate a PDF [downloadable here](https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf) for easy printing and portability.
+It's written in LaTeX and the workflow generates a PDF [downloadable here](https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf) for easy printing and portability.
 
 There is a QR code in the top right of the document that links to the latest online version.
 
