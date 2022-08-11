@@ -4,8 +4,8 @@
 
 <p>
   <a href="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf">
-    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="320">
-    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="320">
+    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="300">
+    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="300">
   </a>
 </p>
 
