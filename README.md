@@ -15,6 +15,8 @@ It's written in LaTeX and the workflow generates a PDF [downloadable here](https
 
 There is a QR code in the top right of the document that links to the latest online version.
 
+If you [follow me on twitter](https://twitter.com/robert_w_brown) the workflow will automatically publish a tweet when a version is updated.
+
 Give a ⭐️ if this project helps you!
 
 ## Contributing
