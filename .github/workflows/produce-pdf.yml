@@ -79,8 +79,8 @@ jobs:
         uses: snow-actions/tweet@v1.3.0
         with:
           status: |
-            I've just released ${{github.ref_name}} of the Video Streaming Cheatsheet.  Free to download and use from https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf.
-            Hastags #test
+            I've just released ${{github.ref_name}} of the Video Streaming Cheatsheet.  Free to download at https://bit.ly/3p1Omqh.
+            #VOD #IPTV #streaming #StreamingLive #streamingmedia #videoengineering #OTTvideo
           media_paths: |
             video-streaming-cheatsheet-thumbnail-p1.jpg
         env:
