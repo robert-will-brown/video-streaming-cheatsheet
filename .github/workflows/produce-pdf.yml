@@ -79,10 +79,9 @@ jobs:
         uses: snow-actions/tweet@v1.3.0
         with:
           status: |
-            I've just released ${{github.ref_name}} of the Video Streaming Cheatsheet.
+            I've just released ${{github.ref_name}} of the Video Streaming Cheatsheet.  Free to download and use from https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf.
           media_paths: |
             video-streaming-cheatsheet-thumbnail-p1.jpg
-            video-streaming-cheatsheet-thumbnail-p2.jpg
         env:
           CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           CONSUMER_API_SECRET_KEY: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
