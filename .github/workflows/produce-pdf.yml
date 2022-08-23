@@ -75,3 +75,16 @@ jobs:
           file-path: './video-streaming-cheatsheet-thumbnail-p2.jpg'
           content-type: 'image/jpeg'
           destination-dir: '/'
+      - name: Tweet
+        uses: snow-actions/tweet@v1.3.0
+        with:
+          status: |
+            I've just released ${{github.ref_name}} of the Video Streaming Cheatsheet.  Free to download at https://bit.ly/3p1Omqh.
+            #VOD #IPTV #streaming #StreamingLive #streamingmedia #videoengineering #OTTvideo
+          media_paths: |
+            video-streaming-cheatsheet-thumbnail-p1.jpg
+        env:
+          CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          CONSUMER_API_SECRET_KEY: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
