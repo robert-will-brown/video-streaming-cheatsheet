@@ -2,6 +2,8 @@
 
 # Video Streaming Cheatsheet
 
+The *Video Streaming Cheatsheet* is a double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format.  
+
 <p>
   <a href="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf">
     <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="280">
@@ -9,7 +11,7 @@
   </a>
 </p>
 
-The *Video Streaming Cheatsheet* is a double sided page, suitable for printing, that contains common terminology used in the video streaming industry in a quick reference format.  
+
 
 It's written in LaTeX and the workflow generates a PDF [downloadable here](https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf) for easy printing and portability.
 
