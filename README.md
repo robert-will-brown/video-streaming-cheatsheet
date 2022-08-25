@@ -6,8 +6,8 @@ The *Video Streaming Cheatsheet* is a double sided page, suitable for printing, 
 
 <p>
   <a href="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet.pdf">
-    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="280">
-    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="280">
+    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p1.jpg" alt="video-tech-cheatsheet" height="250">
+    <img src="https://video-streaming-cheatsheet.s3.eu-west-2.amazonaws.com/artifacts/video-streaming-cheatsheet-thumbnail-p2.jpg" alt="video-tech-cheatsheet" height="250">
   </a>
 </p>
 
