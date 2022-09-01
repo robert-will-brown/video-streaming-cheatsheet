@@ -1,0 +1,41 @@
+name: Produce and Publish PDF
+on:  # yamllint disable-line rule:truthy
+  push:
+    tags:
+    - 'v*.*.*'
+  workflow_dispatch:
+jobs:
+  publish_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Get Current Date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Get Githash
+        id: git_hash
+        run: echo "::set-output name=git_hash::$(git rev-parse --short "$GITHUB_SHA")"
+      - name: Get Git Branch
+        id: git_branch
+        run: echo "::set-output name=git_branch::${GITHUB_REF#refs/heads/}"
+      - name: Set Version in Document
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "@@version@@"
+          replace: "${{github.ref_name}}"
+          #replace: "${{ steps.date.outputs.date }}-${{ steps.git_branch.outputs.git_branch }}-${{ steps.git_hash.outputs.git_hash }}"
+          regex: false
+      - name: Set DateStamp in Document
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "@@datestamp@@"
+          replace: "${{ steps.date.outputs.date }}"
+          regex: false
+      - name: Compile LaTeX Document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: video-streaming-cheatsheet.tex
+      - name: Two Pages Only Check
+        run: cicd/TwoPages.sh
+        shell: bash
