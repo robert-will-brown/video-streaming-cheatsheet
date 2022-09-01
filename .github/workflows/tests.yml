@@ -52,7 +52,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: video-streaming-cheatsheet.pdf
-          path: ./video-streaming-cheatsheet.pdf
+          path: ./
 
       - name: Install pdfinfo
         run: sudo apt-get install poppler-utils
