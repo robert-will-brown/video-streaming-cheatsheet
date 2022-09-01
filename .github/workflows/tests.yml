@@ -1,8 +1,6 @@
-name: Produce and Publish PDF
+name: Tests
 on:  # yamllint disable-line rule:truthy
   push:
-    tags:
-    - 'v*.*.*'
   workflow_dispatch:
 jobs:
   publish_pdf:
