@@ -1,4 +1,6 @@
 [![Produce and Publish PDF](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml/badge.svg?branch=main)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml)
+[![Tests](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml/badge.svg)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml)
+
 
 # Video Streaming Cheatsheet
 
