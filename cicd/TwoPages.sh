@@ -4,6 +4,10 @@
 
 set -e
 
+find .
+
+pdfinfo video-streaming-cheatsheet.pdf
+
 NumPages=$(pdfinfo video-streaming-cheatsheet.pdf |grep "^Pages:" |awk '{print $2}')
 
 echo "Number of pages = ${NumPages}"
