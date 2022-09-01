@@ -55,4 +55,4 @@ jobs:
           path: ./video-streaming-cheatsheet.pdf
       - name: Two Pages Only Check
         run: cicd/TwoPages.sh
-        shell: bash
+        shell: bash -e
