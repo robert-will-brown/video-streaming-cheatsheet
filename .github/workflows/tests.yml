@@ -23,7 +23,6 @@ jobs:
         with:
           find: "@@version@@"
           replace: "${{github.ref_name}}"
-          #replace: "${{ steps.date.outputs.date }}-${{ steps.git_branch.outputs.git_branch }}-${{ steps.git_hash.outputs.git_hash }}"
           regex: false
       - name: Set DateStamp in Document
         uses: jacobtomlinson/gha-find-replace@v2
@@ -38,7 +37,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@master
         with:
-          name: video-streaming-cheatsheet.pdf
+          name: video-streaming-cheatsheet-TESTING.pdf
           path: ./video-streaming-cheatsheet.pdf
 
   test_two_pages:
@@ -53,10 +52,8 @@ jobs:
         with:
           name: video-streaming-cheatsheet.pdf
           path: ./
-
       - name: Install pdfinfo
         run: sudo apt-get install poppler-utils
-
       - name: Two Pages Only Check
         run: cicd/TwoPages.sh
         shell: bash --noprofile --norc -eo pipefail -o nounset {0}
