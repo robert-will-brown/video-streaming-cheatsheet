@@ -53,6 +53,10 @@ jobs:
         with:
           name: video-streaming-cheatsheet.pdf
           path: ./video-streaming-cheatsheet.pdf
+
+      - name: Install pdfinfo
+        run: sudo apt-get install poppler-utils
+
       - name: Two Pages Only Check
         run: cicd/TwoPages.sh
         shell: bash --noprofile --norc -eo pipefail -o nounset {0}
