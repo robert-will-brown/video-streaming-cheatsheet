@@ -3,5 +3,16 @@
 # Check the spelling of the LaTeX file and fail if there are errors.
 #
 
-hunspell -t -a -l -p dict/words **/*tex
+hunspellOutput="$(hunspell -t -a -l -p dict/words **/*tex)"
+if [ "${hunspellOutput}" != "" ]; then
+  # Spelling errors
+  echo ""
+  echo "======================================="
+  echo "There are spelling errors listed below."
+  echo "Either fix, or add to \"dict/words\""
+  echo "======================================="
+  echo ""
+  hunspell -t -a -l -p dict/words **/*tex
+  exit 1
 
+fi
