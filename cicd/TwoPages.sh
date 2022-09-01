@@ -4,9 +4,9 @@
 
 set -e
 
-pdfinfo video-streaming-cheatsheet.pdf
+pdfinfo video-streaming-cheatsheet-TESTING.pdf
 
-NumPages=$(pdfinfo video-streaming-cheatsheet.pdf |grep "^Pages:" |awk '{print $2}')
+NumPages=$(pdfinfo video-streaming-cheatsheet-TESTING.pdf |grep "^Pages:" |awk '{print $2}')
 
 echo "Number of pages in document: ${NumPages}"
 

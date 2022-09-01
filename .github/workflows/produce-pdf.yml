@@ -76,6 +76,11 @@ jobs:
           file-path: './video-streaming-cheatsheet-thumbnail-p2.jpg'
           content-type: 'image/jpeg'
           destination-dir: '/'
+      - name: Upload Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: video-streaming-cheatsheet-${{github.ref_name}}.pdf
+          path: ./video-streaming-cheatsheet.pdf
       - name: Tweet
         uses: snow-actions/tweet@v1.3.0
         with:
