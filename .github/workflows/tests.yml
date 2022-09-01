@@ -1,6 +1,19 @@
 name: Tests
 on: [pull_request, workflow_dispatch]
 jobs:
+
+  spelling:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Install hunspell
+        run: sudo apt-get -y install hunspell hunspell-en-gb
+      - name: Spell Check
+        run: cicd/Spelling.sh
+        shell: bash --noprofile --norc -eo pipefail -o nounset {0}
+
   build_pdf:
     name: Create Test PDF
     runs-on: ubuntu-latest
@@ -38,7 +51,7 @@ jobs:
           name: video-streaming-cheatsheet.pdf
           path: ./video-streaming-cheatsheet.pdf
 
-  test_two_pages:
+  two_pages:
     name: Check Num Pages
     needs: build_pdf
     runs-on: ubuntu-latest
