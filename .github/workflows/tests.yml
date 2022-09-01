@@ -9,7 +9,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Install hunspell
-        run: sudo apt-get install -y hunspell-en-gb
+        run: sudo apt-get -y install hunspell hunspell-en-gb
       - name: Spell Check
         run: cicd/Spelling.sh
         shell: bash --noprofile --norc -eo pipefail -o nounset {0}
