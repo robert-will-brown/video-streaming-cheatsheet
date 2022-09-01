@@ -35,15 +35,20 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: video-streaming-cheatsheet.tex
-      - name: Two Pages Only Check
-        run: cicd/TwoPages.sh
-        shell: bash
+      - uses: actions/upload-artifact@master
+        with:
+          name: video-streaming-cheatsheet.pdf
+          path: ./video-streaming-cheatsheet.pdf
 
   test_two_pages:
     name: Check Num Pages
     needs: build_pdf
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: video-streaming-cheatsheet.pdf
+          path: ./video-streaming-cheatsheet.pdf
       - name: Two Pages Only Check
         run: cicd/TwoPages.sh
         shell: bash
