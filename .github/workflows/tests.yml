@@ -4,7 +4,7 @@ on:  # yamllint disable-line rule:truthy
   workflow_dispatch:
 jobs:
   build_pdf:
-    name: Create PDF
+    name: Create Test PDF
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
