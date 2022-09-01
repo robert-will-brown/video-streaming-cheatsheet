@@ -37,7 +37,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@master
         with:
-          name: video-streaming-cheatsheet-TESTING.pdf
+          name: video-streaming-cheatsheet.pdf
           path: ./video-streaming-cheatsheet.pdf
 
   test_two_pages:
@@ -50,7 +50,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: video-streaming-cheatsheet-TESTING.pdf
+          name: video-streaming-cheatsheet.pdf
           path: ./
       - name: Install pdfinfo
         run: sudo apt-get install poppler-utils
