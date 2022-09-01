@@ -3,7 +3,8 @@ on:  # yamllint disable-line rule:truthy
   push:
   workflow_dispatch:
 jobs:
-  publish_pdf:
+  build_pdf:
+    name: Create PDF
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
@@ -34,6 +35,15 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: video-streaming-cheatsheet.tex
+      - name: Two Pages Only Check
+        run: cicd/TwoPages.sh
+        shell: bash
+
+  test_two_pages:
+    name: Check Num Pages
+    needs: preflight
+    runs-on: ubuntu-latest
+    steps:
       - name: Two Pages Only Check
         run: cicd/TwoPages.sh
         shell: bash
