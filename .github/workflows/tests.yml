@@ -1,7 +1,5 @@
 name: Tests
-on:  # yamllint disable-line rule:truthy
-  push:
-  workflow_dispatch:
+on: [pull_request, workflow_dispatch]
 jobs:
   build_pdf:
     name: Create Test PDF
