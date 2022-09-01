@@ -3,7 +3,7 @@ on: [pull_request, workflow_dispatch]
 jobs:
 
   spelling:
-    name: Check Spelling
+    name: Spell Check
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository

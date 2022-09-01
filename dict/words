@@ -1,4 +1,5 @@
 # Add any word in here and then use `sort -f -u`
+analysing
 1080i
 2D
 3D
@@ -19,6 +20,7 @@ AV1
 AVC
 AVOD
 Bitrate
+bitrate
 BMFF
 BT
 C2
@@ -30,6 +32,7 @@ chrominance
 CMAF
 codebase
 Codec
+codec
 codecs
 colour
 Comcast
@@ -67,9 +70,11 @@ js
 JW
 Kaltura
 Keyframe
+keyframe
 LCEVC
 LITC
 Luminance
+luminance
 m3u8
 MAM
 MBR
