@@ -46,6 +46,8 @@ jobs:
     needs: build_pdf
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
