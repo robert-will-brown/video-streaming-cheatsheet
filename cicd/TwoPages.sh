@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 #
 #
 NumPages=$(pdfinfo video-streaming-cheatsheet.pdf |grep "^Pages:" |awk '{print $2}')
@@ -9,4 +9,3 @@ if [ ${NumPages} -ne 2 ]; then
 else
 	echo "Passed check for 2 pages."
 fi
-
