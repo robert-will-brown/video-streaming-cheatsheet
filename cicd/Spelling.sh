@@ -15,4 +15,7 @@ if [ "${hunspellOutput}" != "" ]; then
   hunspell -d en_GB -t -a -l -p dict/words **/*tex
   exit 1
 
+else
+  echo "Spelling looks good to me..."
+
 fi
