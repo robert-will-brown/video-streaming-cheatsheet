@@ -1,6 +1,9 @@
-#!/bin/bash -e
+#!/bin/bash
 #
 #
+
+set -e
+
 NumPages=$(pdfinfo video-streaming-cheatsheet.pdf |grep "^Pages:" |awk '{print $2}')
 
 if [ ${NumPages} -ne 2 ]; then
