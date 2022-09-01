@@ -41,7 +41,7 @@ jobs:
 
   test_two_pages:
     name: Check Num Pages
-    needs: preflight
+    needs: build_pdf
     runs-on: ubuntu-latest
     steps:
       - name: Two Pages Only Check
