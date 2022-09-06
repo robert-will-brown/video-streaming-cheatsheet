@@ -1,7 +1,5 @@
 [![Produce and Publish PDF](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml/badge.svg)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/produce-pdf.yml)
-[![Tests](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml/badge.svg)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml)
-
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/robert-will-brown/video-streaming-cheatsheet?include_prereleases&label=latest%20release)](https://github.com/robert-will-brown/video-streaming-cheatsheet/releases/latest) 
+[![Tests](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml/badge.svg)](https://github.com/robert-will-brown/video-streaming-cheatsheet/actions/workflows/tests.yml) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/robert-will-brown/video-streaming-cheatsheet?include_prereleases&label=latest%20release)](https://github.com/robert-will-brown/video-streaming-cheatsheet/releases/latest) 
 
 # Video Streaming Cheatsheet
 
